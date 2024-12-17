@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>YouTube Макет</title>
+</head>
+<body>
+    <!-- Боковая панель -->
+    <aside class="sidebar">
+        <div class="menu-item">Головна</div>
+        <div class="menu-item">Shorts</div>
+        <div class="menu-item">Підписки</div>
+        <div class="menu-item">Ви</div>
+    </aside>
+
+    <!-- Основной контент -->
+    <div class="content-wrapper">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="logo">YouTube</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Введите запрос">
+                <button>Пошук</button>
+            </div>
+        </header>
+
+        <!-- Навигация по категориям -->
+        <nav class="categories">
+            <button>Все</button>
+            <button>Ігри</button>
+            <button>Музика</button>
+            <button>Новини</button>
+            <button>Туризм</button>
+            <button>Спорт</button>
+        </nav>
+
+        <!-- Основной контент с видео -->
+        <main class="main">
+            <div class="video-grid">
+                <div class="video-card">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/tlQE9EppFLw?si=3tWAKZm2x0nxFzL1" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>приколи</h3>
+                    <p> • 1 просмотров • 10 годин тому</p>
+                </div>
+
+                <div class="video-card">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/iQtFKDPS7Yw?si=v9xNFLfwMfFyzzAm" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>приколи 2</h3>
+                    <p> 94345 млрд^4 просмотров • 100 год назад</p>
+                </div>
+
+                <div class="video-card">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/Eyhi6HNJ0Zg?si=RRZVIlOaqPJZumfc" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3>видео</h3>
+                    <p> 5 млн просмотров • 10 месяцев назад</p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd; /* Черный фон */
+    color: #e42828; /* Белый текст */
+}
+
+/* Стили боковой панели */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #ffffff; /* Черный фон */
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.menu-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #000000; /* Оранжевый текст */
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #000000; /* Темнее при наведении */
+}
+
+/* Основной контент */
+.content-wrapper {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+/* Стили шапки */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff0000; /* Черный фон */
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000; /* Оранжевый цвет логотипа */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #ff0000; /* Темно-серый фон поиска */
+    border: none;
+    color: white;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #ff9900; /* Оранжевая кнопка поиска */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Стили категорий */
+.categories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categories button {
+    padding: 10px 20px;
+    background-color: #333333; /* Темный фон категорий */
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ff0022; /* Оранжевый текст */
+    transition: background-color 0.3s;
+}
+
+.categories button:hover {
+    background-color: #ff9900; /* Оранжевый фон при наведении */
+    color: #000000; /* Черный текст при наведении */
+}
+
+/* Основной контент */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background-color: #000000; /* Черный фон видеокарт */
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.video-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffffff; /* Белый текст */
+}
+
+.video-card p {
+    color: #b3b3b3; /* Светло-серый текст */
+    font-size: 14px;
+}
